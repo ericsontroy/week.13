@@ -1,38 +1,45 @@
+body {
+  background-color: bisque;
+}
+/* when I was styling this page I realized how much I realized a simple coding instruction could be twisted, all jokes aside I did my best of the instructions and what they meant, the biggest hang up I wanted to know the "center" of the page is what I have but I aslo crossed my mind of a seperate div centered on the page with the form & inputs in it, the struggles of a rookie dev */
+
 .App {
   text-align: center;
+  background-color: dimgrey;
+  margin: 5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navBar {
+  width: auto;
+  background-color: cadetblue;
+  color: black;
+  padding: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav ul {
+  display: flex;
+  flex-direction: row;
+  font-size: large;
+  font-family: "Times New Roman", Times, serif;
+  justify-content: space-around;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav ul li {
+  text-decoration: underline;
+}
+
+nav ul li:hover {
+  color: yellow;
+}
+
+form {
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+form h3 {
+  border: solid black;
 }
